@@ -1,0 +1,17 @@
+body{ background: white;
+}
+img {
+  width:25%;
+  max-height: 75px;
+ margin-inline: 1px;
+}
+input {
+  display : flex;
+  justifyContent: center;
+  alignItems: center;
+  flexDirection: row;
+}
+button {
+
+  
+}

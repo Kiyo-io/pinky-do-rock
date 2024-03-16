@@ -3,11 +3,6 @@ const newNav = { Nav };
 console.log(newNav.Nav);
 export const url = [
   {
-    key: 5,
-    cat: "Flowers",
-    url: "https://images.unsplash.com/photo-1532211387405-12202cb81d7b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8fHw%3D",
-  },
-  {
     key: 1,
     cat: "Sweets",
     url: "https://images.unsplash.com/photo-1532117364815-720cd35ff6e3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -32,14 +27,15 @@ export const url = [
     cat: "Animals",
     url: "https://images.unsplash.com/photo-1596854307809-6e754c522f95?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
+  {
+    key: 6,
+    cat: "Flowers",
+    url: "https://images.unsplash.com/photo-1532211387405-12202cb81d7b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8fHw%3D",
+  },
 ];
 
 function ImageContainer(props) {
-  return (
-    <div>
-      <img src={props.src} key={props.key}></img>
-    </div>
-  );
+  return <img src={props.src} key={props.key}></img>;
 }
 
 export default ImageContainer;

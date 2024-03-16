@@ -1,13 +1,17 @@
-// import {url} from "./image_container"
+import Button from "react-bootstrap/Button";
 
-// const pink = {url}
-// console.log(pink);
-function Search() {
-  
+function Search(props) {
   return (
-    <div>
-      <input type="text" placeholder="Search" />
-      <button>Search</button>
+    <div id="search">
+      <input
+        onChange={props.change}
+        type="text"
+        value={props.value}
+        placeholder="Search"
+      />
+      <Button variant="light" onClick={props.click}>
+        Search
+      </Button>
     </div>
   );
 }

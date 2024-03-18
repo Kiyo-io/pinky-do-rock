@@ -4,7 +4,7 @@ import Search from "./Search.jsx";
 import Nav from "./Nav.jsx";
 import { useState } from "react";
 import Header from "./Header.jsx";
-import TypesExample from "./buttons.jsx";
+import SearchBackground from "./search-background.jsx";
 
 export default function App() {
   // Nav
@@ -32,9 +32,9 @@ export default function App() {
   console.log(<Header />);
   return (
     <main>
-      <Header />
+      <Header click={handleSearch} />
+      <SearchBackground />
       <Search change={handleInputChange} value={input} click={handleSearch} />
-      <TypesExample />
       <Nav cat={newCat} />
       <div id="img-cont">
         {search.url.map((item) => (

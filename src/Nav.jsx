@@ -3,19 +3,39 @@ import Button from "react-bootstrap/Button";
 function Nav(props) {
   return (
     <div id="nav-list">
-      <Button variant="light" onClick={props.cat}>
+      <Button
+        className="cormorant-infant-regular"
+        variant="link"
+        onClick={props.cat}
+      >
         Sweets
       </Button>
-      <Button variant="light" onClick={props.cat}>
+      <Button
+        className="cormorant-infant-regular"
+        variant="link"
+        onClick={props.cat}
+      >
         Animals
       </Button>
-      <Button variant="light" onClick={props.cat}>
+      <Button
+        className="cormorant-infant-regular"
+        variant="link"
+        onClick={props.cat}
+      >
         Imaginary
       </Button>
-      <Button variant="light" onClick={props.cat}>
+      <Button
+        className="cormorant-infant-regular"
+        variant="link"
+        onClick={props.cat}
+      >
         Cozy
       </Button>
-      <Button variant="light" onClick={props.cat}>
+      <Button
+        className="cormorant-infant-regular"
+        variant="link"
+        onClick={props.cat}
+      >
         Flowers
       </Button>
     </div>

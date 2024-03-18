@@ -4,6 +4,7 @@ function Search(props) {
   return (
     <div id="search">
       <input
+        className="overlock-regular"
         onChange={props.change}
         type="text"
         value={props.value}

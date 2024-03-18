@@ -1,6 +1,5 @@
-import Nav from "./Nav";
-const newNav = { Nav };
-console.log(newNav.Nav);
+import ButtonReactions from "./Reactions.jsx";
+
 export const url = [
   {
     key: 1,
@@ -35,7 +34,12 @@ export const url = [
 ];
 
 function ImageContainer(props) {
-  return <img src={props.src} key={props.key}></img>;
+  return (
+    <div>
+      <img src={props.src} key={props.key}></img>
+      <ButtonReactions />
+    </div>
+  );
 }
 
 export default ImageContainer;

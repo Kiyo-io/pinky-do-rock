@@ -1,10 +1,32 @@
 body {
   background: white;
 }
+.overlock-regular {
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cormorant-infant-regular {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #head {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
+}
+#head > Button {
+  width: 10px;
+  color: black;
+  text-decoration: none;
+  margin: 25px;
 }
 #head a > img,
 .rounded-circle {
@@ -19,6 +41,8 @@ body {
 #head > h1 {
   text-align: center;
   box-shadow: none;
+  margin: 25px;
+  font-size: 48px;
 }
 #header-right {
   text-align: right;
@@ -37,19 +61,50 @@ img {
   border-color: deeppink;
   border-width: 5px;
   box-shadow: 0 4px 8px black;
+  margin-inline: 10px;
 }
-
+#search-bkg > img {
+  height: 50px;
+  width: 100%;
+  margin-inline: 0;
+  border-radius: 0;
+  z-index: -1;
+  margin-top: 8px;
+  position: absolute;
+  opacity: 80%;
+}
 #search,
 #nav-list {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 120px;
 }
 #search > Button,
 #nav-list > Button {
+  color: black;
+  text-decoration: none;
+}
+#search > input {
+  border-radius: 20px;
   box-shadow: 0 4px 8px black;
+}
+
+#btnReactions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 4%;
+  z-index: 1;
+  margin-left: 165px;
+  position: absolute;
+}
+
+#love,
+#download,
+#thumb-up {
+  width: 100%;
+  box-shadow: none;
 }

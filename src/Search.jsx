@@ -8,11 +8,11 @@ function Search(props) {
         onChange={props.change}
         type="text"
         value={props.value}
-        placeholder="Search"
+        placeholder=""
       />
-      <Button variant="light" onClick={props.click}>
-        Search
-      </Button>
+      <button variant="light" onClick={props.click}>
+        <span class="material-symbols-outlined">search</span>
+      </button>
     </div>
   );
 }

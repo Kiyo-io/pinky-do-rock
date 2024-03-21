@@ -1,3 +1,6 @@
+* {
+  margin: 0 0 0 0;
+}
 body {
   background: white;
 }
@@ -54,6 +57,7 @@ body {
   gap: 10px;
   width: 100%;
   height: 0;
+  position: relative;
 }
 img {
   width: 100%;
@@ -63,15 +67,27 @@ img {
   box-shadow: 0 4px 8px black;
   margin-inline: 10px;
 }
+#search-bkg {
+  background-image: linear-gradient(
+    to right,
+    #ff0a54,
+    #ff477e,
+    #ff5c8a,
+    #ff7096,
+    #ff85a1,
+    #ff99ac,
+    #fbb1bd,
+    #f9bec7,
+    #f7cad0,
+    #fae0e4
+  );
+  filter: contrast(1);
+}
+
 #search-bkg > img {
-  height: 50px;
-  width: 100%;
-  margin-inline: 0;
-  border-radius: 0;
-  z-index: -1;
-  margin-top: 8px;
-  position: absolute;
-  opacity: 80%;
+  height: 75px;
+  filter: opacity(0);
+  position: relative;
 }
 #search,
 #nav-list {
@@ -83,7 +99,7 @@ img {
   flex-direction: row;
   gap: 120px;
 }
-#search > Button,
+
 #nav-list > Button {
   color: black;
   text-decoration: none;
@@ -91,6 +107,20 @@ img {
 #search > input {
   border-radius: 20px;
   box-shadow: 0 4px 8px black;
+  border: none;
+  position: absolute;
+  margin-bottom: 80px;
+}
+#search > Button {
+  color: black;
+  margin-left: 150px;
+  margin-bottom: 75px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+#search input > ::placeholder {
+  text-align: center;
 }
 
 #btnReactions {
@@ -99,12 +129,13 @@ img {
   width: 4%;
   z-index: 1;
   margin-left: 165px;
-  position: absolute;
 }
 
 #love,
 #download,
 #thumb-up {
-  width: 100%;
   box-shadow: none;
+}
+#thumb-up > {
+  width: 10px;
 }

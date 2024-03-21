@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-function ButtonReactions() {
+function ButtonReactions(props) {
   const [hoveredButton, setHoveredButton] = useState(null);
   const [imageSrc1, setImageSrc1] = useState("../icons/love.png");
   const [imageSrc2, setImageSrc2] = useState("../icons/download.png");
